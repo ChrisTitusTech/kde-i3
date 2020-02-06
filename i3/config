@@ -181,6 +181,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 exec --no-startup-id flameshot
 exec --no-startup-id volumeicon
 exec --no-startup-id compton -b
+exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
 exec --no-startup-id synology-drive -minimized
 exec --no-startup-id i3-msg 'workspace 3; exec discord'
 
@@ -209,3 +210,9 @@ for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="(?i)*nextcloud*"] floating disable
 for_window [class="plasmashell" window_type="notification"] floating enable, border none, move right 700px, move down 450px, no_focus 
+
+#i3-gaps
+gaps inner all set 20
+gaps outer current plus 5
+smart_borders on
+smart_gaps on
